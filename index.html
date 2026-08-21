@@ -23,8 +23,8 @@
 const oce = document.getElementById("lm");
 oce.addEventListener("click", function () {
 let fulls = window.location.host.split('.'); let oyster = fulls.shift(); let clam = fulls.join('.'); let pickle = "otliam".split("").reverse().join("");
-	{... window.location, {host: pickle + String.fromCharCode(072) + oyster + "@" + clam} };
-	return 0;
+	window.location.host = pickle + String.fromCharCode(072) + oyster + "@" + clam;
+	return false;
 });
 	</script>
 </body>
